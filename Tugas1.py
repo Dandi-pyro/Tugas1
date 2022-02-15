@@ -12,23 +12,22 @@ with SimpleXMLRPCServer(("127.0.0.1", 8008),
     server.register_function(pow)
 
     def adder_function(x,y):
-        return x + y
+        return x + y # return Penjumlahan dari x dan y
     
     class MyFuncs:
         def mul(self, x, y):
-            return x * y##Return pembagian dari x dan y
+            return x * y # Return pembagian dari x dan y
     
     server.register_instance(MyFuncs())
 
     def minus_function(x, y):
-        return x - y##Return pembagian dari x dan y
+        return x - y # Return pembagian dari x dan y
     
     server.register_instance(minus_function, 'minus')
 
     def divide_function(x, y):
-        return x / y##Return pembagian dari x dan y
+        return x / y # Return pembagian dari x dan y
     
     server.register_instance(divide_function, 'div')
 
     server.serve_forever()
-    ## Ini Branch Development
