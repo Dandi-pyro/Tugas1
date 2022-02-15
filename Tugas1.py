@@ -1,6 +1,6 @@
-from xmlrpc.server import SimpleXMLRPCServer
+from xmlrpc.server import SimpleXMLRPCServer #import server
 
-from xmlrpc.server import SimpleXMLRPCRequestHandler
+from xmlrpc.server import SimpleXMLRPCRequestHandler #import Request Handler
 
 class RequestHandler(SimpleXMLRPCRequestHandler):
      rpc_paths = ('/RPC2',)
