@@ -2,7 +2,7 @@ from xmlrpc.server import SimpleXMLRPCServer #import server
 
 from xmlrpc.server import SimpleXMLRPCRequestHandler #import Request Handler
 
-class RequestHandler(SimpleXMLRPCRequestHandler):
+class RequestHandler(SimpleXMLRPCRequestHandler): # class request handler
      rpc_paths = ('/RPC2',)
 
 with SimpleXMLRPCServer(("127.0.0.1", 8008),
